@@ -1,0 +1,25 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@paraboly/react-native-modal-box": "0.0.1",
+    "expo": "^32.0.0",
+    "lodash": "^4.17.11",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-dynamic-vector-icons": "0.0.3",
+    "react-native-easy-grid": "^0.2.1",
+    "react-native-floating-action-button": "^0.1.11",
+    "react-native-material-ripple": "^0.8.0",
+    "react-native-vector-icons": "^6.4.2"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0"
+  },
+  "private": true
+}

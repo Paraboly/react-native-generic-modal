@@ -1,0 +1,39 @@
+{
+  "name": "@paraboly/react-native-generic-modal",
+  "description": "Fully customizable Generic Modal via Paraboly for React Native.",
+  "version": "0.0.1",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
+  },
+  "keywords": [
+    "react-native",
+    "icons",
+    "javascript",
+    "ui-lib",
+    "rn",
+    "header-view",
+    "header",
+    "view"
+  ],
+  "homepage": "https://www.freakycoder.com",
+  "bugs": "https://github.com/WrathChaos/react-native-header-view/issues",
+  "repository": "git@github.com:WrathChaos/react-native-header-view.git",
+  "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0"
+  },
+  "peerDependencies": {
+    "lodash": "^4.17.x",
+    "react": ">= 16.x",
+    "react-native": ">= 0.55.x",
+    "react-native-easy-grid": ">= 0.2.1",
+    "react-native-vector-icons": ">= 6.x.x",
+    "react-native-dynamic-vector-icons": ">= x.x.x",
+    "react-native-floating-action-button": ">= x.x.x"
+  }
+}
