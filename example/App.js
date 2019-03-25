@@ -1,8 +1,6 @@
 import React from "react";
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
-import GenericModal from "./lib/src/components/GenericModal";
-import MyIcon from "react-native-custom-icon";
-import IcomoonConfig from "./assets/selection.json";
+import GenericModal from "@paraboly/react-native-generic-modal";
 import colors from "./lib/src/components/styles/colors";
 
 const { width } = Dimensions.get("window");
