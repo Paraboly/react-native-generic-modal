@@ -83,6 +83,8 @@ npm i @paraboly/react-native-generic-modal
 | contextTextStyle     |    style    |    style     | use this to set your own style for context text                                       |
 | backgroundColor      |    color    |   #a092d6    | use this to set background color for the header part of the modal                     |
 | customIconComponent  |  component  |     null     | use this to set your own custom icon component for the generated buttons              |
+| onOpened             |  function   |     null     | use this to set your own onOpened function                                            |
+| onClosed             |  function   |     null     | use this to set your own onClosed function                                            |
 
 
 ## Generated Buttons Usage

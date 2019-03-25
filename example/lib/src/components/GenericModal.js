@@ -15,6 +15,8 @@ class GenericModal extends React.Component {
       isOpen,
       refName,
       backdrop,
+      onOpened,
+      onClosed,
       modalWidth,
       coverScreen,
       modalBottom,
@@ -31,6 +33,8 @@ class GenericModal extends React.Component {
         backdrop={backdrop || false}
         style={modalContainer(modalWidth, modalHeight, modalBottom)}
         coverScreen={coverScreen || false}
+        onOpened={onOpened}
+        onClosed={onClosed}
       >
         <View style={[styles.modalContent]}>
           {modalDesignComponent || <ModalDesign data={this.props} />}
