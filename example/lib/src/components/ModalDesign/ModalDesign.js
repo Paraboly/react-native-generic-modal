@@ -8,7 +8,6 @@ import styles, {
   _contextTextStyle
 } from "./ModalDesign.style";
 
-// TODO: Delete comments after everything is done
 const ModalDesign = props => {
   const {
     title,
@@ -29,17 +28,15 @@ const ModalDesign = props => {
       <View style={titleContainer(backgroundColor)}>
         <Text style={titleTextStyle || _titleTextStyle(fontFamily)}>
           {title || ""}
-          {/* {SharedUtils.Capitalize(selectedMarker.name) || ""} */}
         </Text>
         <Text style={rightTextStyle || _rightTextStyle}>{rightText || ""}</Text>
       </View>
       <View style={contextContainer(modalWidth, contextHeight)}>
-        <Text style={contextTextStyle || _contextTextStyle}>
-          {context || defaultContext || ""}
-          {/* {context ||
-              (selectedMarker.displayAddress ||
-                "Adres şuanda güncel değildir.")} */}
-        </Text>
+        <View style={styles.contextContainerGlue}>
+          <Text style={contextTextStyle || _contextTextStyle}>
+            {context || defaultContext || ""}
+          </Text>
+        </View>
       </View>
     </View>
   );

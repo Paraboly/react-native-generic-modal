@@ -29,8 +29,8 @@ export function contextContainer(modalWidth, contextHeight) {
     flexDirection: "column",
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
-    height: contextHeight || 85,
-    width: modalWidth || width * 0.8,
+    height: contextHeight || 55,
+    width: modalWidth || width * 0.9,
     shadowOffset: { width: 3, height: 3 },
     shadowColor: colors.theme.light.shadowColor,
     backgroundColor: colors.theme.light.primaryWhite
@@ -68,3 +68,9 @@ export function _rightTextStyle(fontFamily) {
     fontFamily: fontFamily || "Helvetica"
   };
 }
+
+export default {
+  contextContainerGlue: {
+    margin: 16
+  }
+};

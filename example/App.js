@@ -1,15 +1,16 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import FloatingActionButton from "react-native-floating-action-button";
+import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
 import GenericModal from "./lib/src/components/GenericModal";
 import colors from "./lib/src/components/styles/colors";
+
+const { width } = Dimensions.get("window");
 
 export default class App extends React.Component {
   buttons = [
     {
       name: "cancel",
       icon: "cancel",
-      type: "material-icons",
+      type: "MaterialIcons",
       // customIcon: true,
       size: 35,
       color: "#C60817",
@@ -18,7 +19,7 @@ export default class App extends React.Component {
     {
       name: "verify",
       icon: "verified-user",
-      type: "material-icons",
+      type: "MaterialIcons",
       // customIcon: true,
       size: 35,
       color: "#06CAA6",
@@ -34,17 +35,10 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <FloatingActionButton
-          size={40}
-          textDisable
-          iconSize={20}
-          iconName="cancel"
-          iconType="material-icons"
-          onPress={() => {}}
-          shadowColor="rgba(0,0,0,0.11)"
-          iconColor={colors.theme.light.primary}
-          rippleColor={colors.theme.light.primary}
+        <Image
+          style={{ width: 300, height: 100 }}
+          resizeMode="contain"
+          source={require("./assets/parabol_logo.png")}
         />
         <GenericModal
           isOpen={true}
@@ -52,6 +46,7 @@ export default class App extends React.Component {
           title="Title"
           ref="testModal"
           refName="testModal"
+          context="Test Modal"
           generateButtons={this.getButtons()}
           contextTextStyle={styles.contextTextStyle}
           backgroundColor={colors.theme.light.default}

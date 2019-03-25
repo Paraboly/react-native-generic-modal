@@ -23,8 +23,6 @@ class GenericModal extends React.Component {
       modalDesignComponent
     } = this.props;
 
-    console.log("Props: ", this.props.generateButtons);
-
     return (
       <Modal
         ref={refName}

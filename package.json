@@ -15,13 +15,14 @@
     "javascript",
     "ui-lib",
     "rn",
-    "header-view",
-    "header",
+    "generic",
+    "modal",
+    "modal-box",
     "view"
   ],
   "homepage": "https://www.freakycoder.com",
-  "bugs": "https://github.com/WrathChaos/react-native-header-view/issues",
-  "repository": "git@github.com:WrathChaos/react-native-header-view.git",
+  "bugs": "https://github.com/Paraboly/react-native-generic-modal/issues",
+  "repository": "git@github.com:Paraboly/react-native-generic-modal.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "devDependencies": {

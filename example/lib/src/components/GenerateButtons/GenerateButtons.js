@@ -6,13 +6,6 @@ import FloatingActionButton from "react-native-floating-action-button";
 import { buttonContainer } from "./GenerateButtons.style";
 import colors from "../styles/colors";
 
-//   (
-//     <MyIcon
-//       name={item.icon}
-//       size={item.size}
-//       color={item.color || colors.theme.light.primaryDark}
-//     />
-//   )
 const GenerateButtons = props => {
   const { modalHeight, generateButtons, customIconComponent } = props.data;
   return (
