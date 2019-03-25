@@ -2,12 +2,13 @@ import React from "react";
 import { View } from "react-native";
 import { Grid, Col } from "react-native-easy-grid";
 import FloatingActionButton from "react-native-floating-action-button";
+import MyIcon from "react-native-custom-icon";
 // Styles
 import { buttonContainer } from "./GenerateButtons.style";
 import colors from "../styles/colors";
 
 const GenerateButtons = props => {
-  const { modalHeight, generateButtons, customIconComponent } = props.data;
+  const { modalHeight, generateButtons, customIconConfig } = props.data;
   return (
     <View style={buttonContainer(modalHeight, generateButtons)}>
       <Grid>
@@ -20,7 +21,14 @@ const GenerateButtons = props => {
                 textColor={item.color}
                 onPress={item.onPress}
                 shadowColor={item.color}
-                iconComponent={customIconComponent}
+                iconComponent={
+                  <MyIcon
+                    name={item.icon}
+                    size={item.size}
+                    color={item.color || colors.theme.light.primaryDark}
+                    config={customIconConfig}
+                  />
+                }
                 iconColor={item.color || colors.theme.light.primary}
                 rippleColor={item.color || colors.theme.light.primary}
               />

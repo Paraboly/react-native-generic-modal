@@ -30,6 +30,7 @@ npm i @paraboly/react-native-generic-modal
 "react": ">= 16.x",
 "react-native": ">= 0.55.x",
 "react-native-easy-grid": ">= 0.2.1",
+"react-native-custom-icon": ">= x.x.x",
 "react-native-vector-icons": ">= 6.x.x",
 "react-native-dynamic-vector-icons": ">= x.x.x",
 "react-native-floating-action-button": ">= x.x.x"

@@ -1,7 +1,7 @@
 {
   "name": "@paraboly/react-native-generic-modal",
   "description": "Fully customizable Generic Modal via Paraboly for React Native.",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -32,6 +32,7 @@
     "lodash": "^4.17.x",
     "react": ">= 16.x",
     "react-native": ">= 0.55.x",
+    "react-native-custom-icon": ">= x.x.x",
     "react-native-easy-grid": ">= 0.2.1",
     "react-native-vector-icons": ">= 6.x.x",
     "react-native-dynamic-vector-icons": ">= x.x.x",

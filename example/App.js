@@ -1,6 +1,8 @@
 import React from "react";
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
 import GenericModal from "./lib/src/components/GenericModal";
+import MyIcon from "react-native-custom-icon";
+import IcomoonConfig from "./assets/selection.json";
 import colors from "./lib/src/components/styles/colors";
 
 const { width } = Dimensions.get("window");
@@ -11,7 +13,7 @@ export default class App extends React.Component {
       name: "cancel",
       icon: "cancel",
       type: "MaterialIcons",
-      // customIcon: true,
+      customIcon: true,
       size: 35,
       color: "#C60817",
       onPress: () => {}
@@ -20,7 +22,7 @@ export default class App extends React.Component {
       name: "verify",
       icon: "verified-user",
       type: "MaterialIcons",
-      // customIcon: true,
+      customIcon: true,
       size: 35,
       color: "#06CAA6",
       onPress: () => {}
@@ -47,6 +49,7 @@ export default class App extends React.Component {
           ref="testModal"
           refName="testModal"
           context="Test Modal"
+          // customIconConfig={IcomoonConfig}
           generateButtons={this.getButtons()}
           contextTextStyle={styles.contextTextStyle}
           backgroundColor={colors.theme.light.default}
