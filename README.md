@@ -1,4 +1,4 @@
-<img alt="Paraboly React Native Generic Modal" src="https://github.com/Paraboly/react-native-generic-modal/blob/master/assets/logo.png" width="1050"/>
+<img alt="Paraboly React Native Generic Modal" src="https://github.com/Paraboly/react-native-generic-modal/blob/master/assets/op_logo.png" width="1050"/>
 
 Fully customizable Generic Modal via Paraboly for React Native.
 
