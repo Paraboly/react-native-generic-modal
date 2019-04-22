@@ -1,28 +1,26 @@
 import React from "react";
-import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
-import GenericModal from "@paraboly/react-native-generic-modal";
-import colors from "./lib/src/components/styles/colors";
-
-const { width } = Dimensions.get("window");
+import { Image, StyleSheet, View } from "react-native";
+import GenericModal from "./lib/src/components/GenericModal";
+import IcomoonConfig from "./assets/selection.json";
 
 export default class App extends React.Component {
   buttons = [
     {
-      name: "cancel",
-      icon: "cancel",
-      type: "MaterialIcons",
-      customIcon: true,
-      size: 35,
+      size: 28,
+      name: "map",
+      icon: "map",
       color: "#C60817",
+      customIcon: true,
+      type: "MaterialIcons",
       onPress: () => {}
     },
     {
-      name: "verify",
-      icon: "verified-user",
-      type: "MaterialIcons",
-      customIcon: true,
-      size: 35,
+      size: 28,
+      name: "announcement",
       color: "#06CAA6",
+      customIcon: true,
+      icon: "announcement",
+      type: "MaterialIcons",
       onPress: () => {}
     }
   ];
@@ -36,21 +34,21 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Image
-          style={{ width: 300, height: 100 }}
           resizeMode="contain"
+          style={{ width: 300, height: 100 }}
           source={require("./assets/parabol_logo.png")}
         />
         <GenericModal
-          isOpen={true}
           backdrop
           title="Title"
+          isOpen={true}
           ref="testModal"
           refName="testModal"
           context="Test Modal"
-          // customIconConfig={IcomoonConfig}
+          backgroundColor="#401394"
+          customIconConfig={IcomoonConfig}
           generateButtons={this.getButtons()}
           contextTextStyle={styles.contextTextStyle}
-          backgroundColor={colors.theme.light.default}
         />
       </View>
     );
@@ -68,6 +66,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     textAlign: "left",
     alignItems: "center",
-    color: colors.theme.light.primaryGrey
+    color: "gray"
   }
 });
