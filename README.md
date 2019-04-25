@@ -76,7 +76,9 @@ npm i @paraboly/react-native-generic-modal
 | title                |   string    |      ""      | change the title                                                                      |
 | context              |   string    |      ""      | change the context                                                                    |
 | rightText            |   string    |      ""      | change the title right side                                                           |
-| fontFamily           | font family |  Helvetica   | use this to set the font family for the modal                                         |
+| titleFontFamily      | font family |  Helvetica   | use this to set the font family for the modal                                         |
+| rightTextFontFamily  | font family |  Helvetica   | use this to set the font family for the modal                                         |
+| contextFontFamily    | font family |  Helvetica   | use this to set the font family for the modal                                         |
 | contextHeight        |   number    |      55      | use this to set context's height                                                      |
 | defaultContext       |   string    |      ""      | use this to set a default context value                                               |
 | titleTextStyle       |    style    |    style     | use this to set your own style for title text                                         |
