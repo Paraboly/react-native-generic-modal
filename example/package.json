@@ -9,7 +9,7 @@
     "android": "react-native run-android"
   },
   "dependencies": {
-    "@paraboly/react-native-generic-modal": "0.0.17",
+    "@paraboly/react-native-generic-modal": "0.0.18",
     "@paraboly/react-native-modal-box": "0.0.1",
     "react": "16.8.3",
     "react-native": "0.59.5",
