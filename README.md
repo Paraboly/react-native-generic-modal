@@ -94,50 +94,46 @@ Okey, we can use Dynamic Vector Icons component as generated buttons but we must
 ```ruby
 buttons = [
     {
+      size: 35,
       name: "cancel",
       icon: "cancel",
-      type: "MaterialIcons",
-      // customIcon: true,
-      size: 35,
       color: "#C60817",
+      type: "MaterialIcons",
       onPress: () => {}
     },
     {
+      size: 35,
       name: "verify",
+      color: "#06CAA6",
       icon: "verified-user",
       type: "MaterialIcons",
-      // customIcon: true,
-      size: 35,
-      color: "#06CAA6",
       onPress: () => {}
     }
   ];
 ```
 
-#### Custom Icon Usage
+#### Generated Buttons Custom Icon Usage
 
 We can use our own custom icon component as well but still we must follow the above format for the generatedButtons but this time we need to send "customIcon: true" data as well. It let the lib knows that a custom icon will be used and also we need to provide "customIconComponent" to let it knows that which component will be implement. 
 
 CustomIconComponent should be something like the below. It has to be item.icon, item.size and item.color for the usage of generatedButtons.
 
 ```ruby
-buttons = [
+ buttons = [
     {
-      name: "cancel",
-      icon: "cancel",
-      type: "MaterialIcons",
-      customIcon: true,
-      size: 35,
+      size: 28,
+      name: "map",
+      icon: "map",
       color: "#C60817",
+      customIcon: true, // Magic is here, DO NOT FORGET this line!
       onPress: () => {}
     },
     {
-      name: "verify",
-      icon: "verified-user",
-      type: "MaterialIcons",
-      customIcon: true,
-      size: 35,
+      size: 28,
       color: "#06CAA6",
+      customIcon: true, // Magic is here, DO NOT FORGET this line!
+      icon: "announcement",
+      name: "announcement",
       onPress: () => {}
     }
   ];
