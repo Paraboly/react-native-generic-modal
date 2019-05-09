@@ -1,7 +1,7 @@
 import React from "react";
+import IcomoonConfig from "./assets/selection.json";
 import { Image, StyleSheet, View } from "react-native";
 import GenericModal from "@paraboly/react-native-generic-modal";
-import IcomoonConfig from "./assets/selection.json";
 
 export default class App extends React.Component {
   buttons = [
